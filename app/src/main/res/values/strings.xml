@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">sqlite</string>
+    <string name="DefaultText" translatable="false" >" "</string>
+</resources>

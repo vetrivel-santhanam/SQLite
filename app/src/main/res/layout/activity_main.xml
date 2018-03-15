@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.brilliantbirdtech.sqlite.MainActivity">
+
+    <TextView
+        android:id="@+id/AddressLabel"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:gravity="top|bottom|left|right"
+        android:text="Address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameLabel" />
+
+    <TextView
+        android:id="@+id/MobileLabel"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:gravity="top|bottom|left|right"
+        android:text="Mobile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddressText" />
+
+    <TextView
+        android:id="@+id/NameLabel"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="64dp"
+        android:gravity="top|bottom|left|right"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/AddressText"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="142dp"
+        android:ems="10"
+        android:gravity="top|bottom|left|right"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:text="Enter address here"
+        app:layout_constraintLeft_toRightOf="@+id/AddressLabel"
+        app:layout_constraintTop_toBottomOf="@+id/NameText" />
+
+    <EditText
+        android:id="@+id/MobileText"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="218dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:gravity="top|bottom|left|right"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:text="Enter Mobile number here"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/MobileLabel"
+        app:layout_constraintTop_toBottomOf="@+id/AddressText" />
+
+    <EditText
+        android:id="@+id/AadharText"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="top|bottom|left|right"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:text="Enter aadhar number here"
+        app:layout_constraintLeft_toRightOf="@+id/NameLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/NameText"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="top|bottom|left|right"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:text="Enter name here"
+        app:layout_constraintLeft_toRightOf="@+id/NameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/AadharText" />
+
+    <Button
+        android:id="@+id/AddList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:gravity="top|bottom|left|right"
+        android:text="Add"
+        app:layout_constraintLeft_toRightOf="@+id/ViewList"
+        app:layout_constraintTop_toTopOf="@+id/ViewList" />
+
+    <Button
+        android:id="@+id/DeleteList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="76dp"
+        android:gravity="top|bottom|left|right"
+        android:text="Delete"
+        app:layout_constraintLeft_toRightOf="@+id/UpdateList"
+        app:layout_constraintTop_toBottomOf="@+id/AddList"
+        app:layout_constraintTop_toTopOf="@+id/UpdateList" />
+
+    <Button
+        android:id="@+id/DeleteDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="52dp"
+        android:gravity="top|bottom|left|right"
+        android:text="DB DELETE"
+        app:layout_constraintLeft_toRightOf="@+id/UpdateList"
+        app:layout_constraintTop_toBottomOf="@+id/AddList"
+        app:layout_constraintTop_toTopOf="@+id/UpdateList" />
+
+    <Button
+        android:id="@+id/UpdateList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="12dp"
+        android:gravity="top|bottom|left|right"
+        android:text="Update"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ViewList" />
+
+    <Button
+        android:id="@+id/DropTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="60dp"
+        android:gravity="top|bottom|left|right"
+        android:text="Drop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ViewList" />
+
+    <Button
+        android:id="@+id/ViewList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="52dp"
+        android:gravity="top|bottom|left|right"
+        android:text="View"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MobileLabel" />
+
+    <TextView
+        android:id="@+id/AadharLabel"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="4dp"
+        android:gravity="top|bottom|left|right"
+        android:text="Aadhar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
